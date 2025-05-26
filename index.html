@@ -1,0 +1,35 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h2>Hello, Abhisshek!</h2>
+      <p>Make your own food, <span class="highlight">stay at home</span></p>
+    </header>
+
+    <input type="text" placeholder="Search any recipe" class="search" />
+
+    <div class="categories">
+      <button class="active" onclick="filterCategory('Popular')">🔥 Popular</button>
+      <button onclick="filterCategory('Western')">Western</button>
+      <button onclick="filterCategory('Drinks')">Drinks</button>
+      <button onclick="filterCategory('Local')">Local</button>
+      <button onclick="filterCategory('Dessert')">Dessert</button>
+    </div>
+
+    <h3>Popular Recipes</h3>
+    <div class="recipes" id="recipe-list">
+      <!-- Recipes will be injected by JS -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

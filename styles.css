@@ -1,0 +1,125 @@
+/* General Reset and Body */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fefefe;
+  color: #333;
+}
+
+.container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Header */
+header h2 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+header p {
+  margin: 5px 0 20px;
+  font-size: 1rem;
+}
+.highlight {
+  color: #f7c700;
+  font-weight: bold;
+}
+
+/* Search */
+.search {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Category Buttons */
+.categories {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.categories button {
+  padding: 8px 16px;
+  border: none;
+  background: #eee;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.categories button.active {
+  background: #f7c700;
+  font-weight: bold;
+}
+
+/* Recipe Cards */
+.recipes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+.card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+.card-info {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.badge {
+  background: #f7c700;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+}
+
+/* Recipe Detail Page */
+.recipe-detail {
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
+}
+.recipe-detail img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.back {
+  margin-bottom: 20px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.content {
+  padding: 10px 0;
+}
+.icons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+ul {
+  padding-left: 18px;
+}

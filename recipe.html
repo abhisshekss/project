@@ -1,0 +1,36 @@
+<!-- recipe.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe Detail</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="recipe-detail">
+    <button class="back" onclick="history.back()">←</button>
+    <img id="recipe-image" src="" alt="Recipe Image" />
+
+    <div class="content">
+      <h2 id="recipe-title"></h2>
+      <span class="badge" id="rating"></span>
+
+      <div class="icons">
+        <span>⏱ <b id="time"></b></span>
+        <span>🍽 <b id="servings"></b></span>
+        <span>🔥 <b id="calories"></b></span>
+        <span>💪 <b id="difficulty"></b></span>
+      </div>
+
+      <h3>Ingredients</h3>
+      <ul id="ingredients"></ul>
+
+      <h3>Directions</h3>
+      <p id="directions"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
